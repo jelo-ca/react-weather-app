@@ -17,6 +17,10 @@ function App() {
     console.log(city);
   }
 
+  function handleKeyDown(e) {
+    if (e.key === "Enter") handleSubmit(e);
+  }
+
   function handleChange(e) {
     setCityInput(e.target.value);
   }
@@ -45,6 +49,7 @@ function App() {
         city={cityInput}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
+        handleKeyDown={handleKeyDown}
       />
       {error ? <h3>No Data Found :( </h3> : <ShowWeather data={weatherData} />}
     </div>

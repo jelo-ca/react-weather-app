@@ -8,6 +8,7 @@ function InputCity(props) {
         className="city-input"
         onChange={props.handleChange}
         value={props.cityInput}
+        onKeyDown={props.handleKeyDown}
       />
       <button className="submit-btn" type="submit" onClick={props.handleSubmit}>
         Submit

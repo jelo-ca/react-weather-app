@@ -46,26 +46,27 @@ function ShowWeather(props) {
           style={{ backgroundColor: dynamicBackground }}
         >
           <h1 className="weather_heading">
-            {city}
-            <br /> <span> {country}</span>
+            {city} <span>{country}</span>
           </h1>
           <h3 className="temp">Temperature: {tempInCelcius}C</h3>
           <hr />
-          <div className="weatherData">
-            <p>
-              Pressure <br /> {pressureInAtm} atm
-            </p>
-            <p>
-              Visibility <br /> {visibilityInKM} Km
-            </p>
-          </div>
-          <div className="weatherData">
-            <p>
-              Humidity: <br /> {humidity} %
-            </p>
-            <p>
-              Clouds: <br /> {clouds} %
-            </p>
+          <div className="weatherData-container">
+            <div className="weatherData">
+              <p>
+                <span>Pressure</span> <br /> {pressureInAtm} atm
+              </p>
+              <p>
+                <span>Visibility</span> <br /> {visibilityInKM} Km
+              </p>
+            </div>
+            <div className="weatherData">
+              <p>
+                <span>Humidity:</span> <br /> {humidity} %
+              </p>
+              <p>
+                <span>Clouds:</span> <br /> {clouds} %
+              </p>
+            </div>
           </div>
         </div>
       </div>
