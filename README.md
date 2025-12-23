@@ -29,27 +29,32 @@ A modern, responsive React weather application that provides real-time weather i
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd weather-app
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+
    ```
    REACT_APP_WEATHER_API=your_api_key_here
    ```
 
    To get an API key:
+
    - Visit [OpenWeatherMap](https://openweathermap.org/api)
    - Sign up for a free account
    - Generate an API key in your dashboard
 
 4. Start the development server:
+
    ```bash
    npm start
    ```
@@ -117,6 +122,7 @@ weather-app/
 ## API Usage
 
 The app uses the OpenWeatherMap Current Weather API endpoint:
+
 ```
 https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}
 ```
